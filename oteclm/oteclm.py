@@ -392,7 +392,7 @@ class ECLM(object):
 
         # Point de départ:
         # startingPoint = [Px, Cco, Cx]
-        if not self.verify_MankamoConstraints(startingPoint):        
+        if not self.verifyMankamoConstraints(startingPoint):        
             startingPoint = self.computeValidMankamoStartingPoint(0.7, verbose)
             if verbose:
                 print('Changed starting point : ', startingPoint)
